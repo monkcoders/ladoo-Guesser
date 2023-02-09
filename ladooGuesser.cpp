@@ -22,7 +22,9 @@ int main()
         cout << "Let me explain you what this game is" << endl;
         this_thread::sleep_for(chrono::seconds(4));
 
-        cout << "In this game you hav\n \ncalculation and i will guess the final answer." << endl;
+        cout << "In this game you have to think of a number of ladoos and we will perform some calculations on them. "<<endl;
+        cout<<"I will guess the final answer." << endl;
+        
         this_thread::sleep_for(chrono::seconds(5));
         cout<<"\n ";
         cout << "Funfact : You dont have to tell me the initial number of ladoos \n \n" << endl;
