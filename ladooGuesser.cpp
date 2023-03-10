@@ -1,11 +1,14 @@
 #include <iostream>
 #include <limits>
+#include<time.h>
+#include<cstdlib>
 #include <chrono>
 #include <thread>
 using namespace std;
 
 int main()
 {
+    
     char c, t;
     bool flag;
     cout << "Hey!!!" << endl
@@ -13,7 +16,7 @@ int main()
     cin >> c;
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
     cout << "Would You like to play a game?" << endl;
-    cin >> c;
+    cin >> c; 
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
     this_thread::sleep_for(chrono::seconds(2));
     if (c == 'y' || c == 'Y')
@@ -41,6 +44,7 @@ int main()
             this_thread::sleep_for(chrono::seconds(10));
             cout << "Now take same number of ladoos from your bestfriend " << endl;
             this_thread::sleep_for(chrono::seconds(10));
+            srand(time(0));
             int a = random() % 100;
             cout << "Add " << a << " ladoos from my side ◕‿↼)" << endl;
             this_thread::sleep_for(chrono::seconds(10));
